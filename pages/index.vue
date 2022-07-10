@@ -103,7 +103,7 @@ export default {
       const kanjiRegex = /([\u{3005}\u{3007}\u{303b}\u{3400}-\u{9FFF}\u{F900}-\u{FAFF}\u{20000}-\u{2FFFF}][\u{E0100}-\u{E01EF}\u{FE00}-\u{FE02}]?)/mu;
 
       const resKanjiData = await this.$axios.get(
-        "http://www.google.com/transliterate?langpair=ja-Hira|ja&num=50&text=" + this.search
+        "www.google.com/transliterate?langpair=ja-Hira|ja&num=50&text=" + this.search
       );
       const kanjiArr = resKanjiData.data[0][1];
 
